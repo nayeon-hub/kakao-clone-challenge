@@ -1,0 +1,61 @@
+.photo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  width: 250px;
+  border-radius: 5px;
+}
+.photo .photo_profile {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: relative;
+  top: -40px;
+}
+.photo .photo__background {
+  width: 250px;
+  height: 130px;
+  border-radius: 5px 5px 0px 0px;
+  position: relative;
+}
+.photo .photo__name {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+.photo .photo__explain {
+  font-size: 11px;
+  margin-bottom: 15px;
+  color: #b2b5bb;
+}
+.photo .photo__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 20px;
+  margin-bottom: 15px;
+  font-size: 11px;
+}
+.photo .photo__btn-follow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6b75ff;
+  padding: 5px 15px;
+  border-radius: 2px;
+  color: #eaecff;
+}
+.photo .photo__btn-message {
+  display: flex;
+  justify-content: center;
+  background-color: #eaecff;
+  align-items: center;
+  padding: 5px 10px;
+  margin-left: 50px;
+  border-radius: 2px;
+  color: #6b75ff;
+}

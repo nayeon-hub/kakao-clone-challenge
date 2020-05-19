@@ -1,0 +1,56 @@
+.product {
+  background-color: white;
+  width: 234px;
+  padding: 18px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.product .product__photo {
+  margin-left: 40px;
+  width: auto;
+  height: auto;
+  max-width: 210px;
+  max-height: 170px;
+  margin-bottom: 40px;
+}
+.product .product__explainone {
+  color: #b2b5bb;
+  font-size: 11px;
+  margin-bottom: 6px;
+}
+.product .product__explaintwo {
+  color: #b2b5bb;
+  font-size: 11px;
+  margin-bottom: 13px;
+}
+.product .product__name {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.product .product__mark-column {
+  display: flex;
+  align-items: center;
+}
+.product .product__write-column {
+  margin-left: 98px;
+  font-size: 10.5px;
+}
+.product .product__price {
+  font-weight: 500;
+}
+.product .product__star i {
+  color: #febd51;
+  margin-right: 2px;
+}
+.product .product__nostar i {
+  color: #d7dde4;
+}
+.product .product__number {
+  margin-left: 5px;
+  color: #babdc3;
+}
