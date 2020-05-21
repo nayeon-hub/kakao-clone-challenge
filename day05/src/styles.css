@@ -1,0 +1,63 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.button {
+  background-color: gray;
+  height: 80px;
+  width: 300px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+}
+.button:hover {
+  animation: 2s buttonColorChange ease-in-out;
+  animation-fill-mode: forwards;
+}
+.button h1 {
+  color: white;
+}
+
+.imageContainer {
+  margin: 30px;
+  height: 180px;
+  width: 180px;
+  background-color: tan;
+}
+.imageContainer:hover {
+  animation: 2s imageAndRotate ease-in-out;
+  animation-fill-mode: forwards;
+}
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+}
+@keyframes buttonColorChange {
+  from {
+    background-color: gray;
+  }
+  to {
+    background-color: rgb(163, 162, 162);
+    box-shadow: 5px 5px 5px gray;
+  }
+}
+@keyframes imageAndRotate {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: rotate(120deg) scale(0.5, 0.5);
+    border: 5px solid black;
+  }
+}
