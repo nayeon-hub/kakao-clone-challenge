@@ -1,0 +1,129 @@
+.first-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 550px;
+  background-color: mediumturquoise;
+}
+.c-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+  width: 50px;
+  animation: infinite 1s turn;
+}
+.circle {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: white;
+}
+.second-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 400px;
+  width: 550px;
+  background-color: mediumaquamarine;
+}
+.s-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  width: 70px;
+}
+.squareOne {
+  height: 40px;
+  width: 10px;
+  background-color: whitesmoke;
+  animation: infinite 1s waveOne;
+}
+.squareTwo {
+  height: 40px;
+  width: 10px;
+  background-color: whitesmoke;
+  animation: infinite 1s waveTwo;
+}
+.squareThree {
+  height: 40px;
+  width: 10px;
+  background-color: whitesmoke;
+  animation: infinite 1s waveThree;
+}
+.squareFour {
+  height: 40px;
+  width: 10px;
+  background-color: whitesmoke;
+  animation: infinite 1s waveFour;
+}
+.squareFive {
+  height: 40px;
+  width: 10px;
+  background-color: whitesmoke;
+  animation: infinite 1s waveFive;
+}
+
+@keyframes turn {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotate(0.5turn);
+  }
+}
+@keyframes waveOne {
+  0% {
+    transform: none;
+  }
+  10% {
+    transform: scaleY(2);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes waveTwo {
+  0% {
+    transform: none;
+  }
+  30% {
+    transform: scaleY(2);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes waveThree {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scaleY(2);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes waveFour {
+  0% {
+    transform: none;
+  }
+  70% {
+    transform: scaleY(2);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes waveFive {
+  0% {
+    transform: none;
+  }
+  90% {
+    transform: scaleY(2);
+  }
+}

@@ -1,0 +1,50 @@
+h1 {
+  color: white;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  height: 1500px;
+}
+.blue-box {
+  background-color: skyblue;
+  width: 65%;
+  height: 1500px;
+  padding: 50px;
+  position: absolute;
+  top: 20%;
+  display: block;
+}
+.box {
+  background-color: skyblue;
+  display: inline;
+}
+.red-box {
+  background-color: tomato;
+  height: 20%;
+  width: 100%;
+  position: fixed;
+}
+.yellow-box {
+  background-color: gold;
+  width: 30%;
+  height: 1500px;
+  border: 10px solid gray;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  display: block;
+}
+.green-box {
+  background-color: yellowgreen;
+  height: 60px;
+  width: 150px;
+  position: absolute;
+  top: 15%;
+  right: 25%;
+}
