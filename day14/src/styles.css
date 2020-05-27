@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+h2,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 10px;
+
+  color: white;
+}
+h5 {
+  font-size: 9px;
+  color: #ea4463;
+}
+
+body {
+  background-color: #f8f8f8;
+  margin: 10px;
+  display: flex;
+}
+
+.g-image {
+  width: 45px;
+  height: 45px;
+}
+.m-image {
+  width: 46px;
+  height: 45px;
+}
+.g-bg {
+  width: 71px;
+  height: 71px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.camera,
+.gamecenter,
+.safari {
+  width: 180px;
+  margin: 20px;
+}
+
+.camera .camera__box,
+.gamecenter .gamecenter__box,
+.safari .safari__box {
+  width: 194px;
+  height: 146px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.camera .camera__box {
+  background-color: #009e91;
+}
+.camera .camera__bg {
+  background-color: #8fd5cf;
+}
+.camera .camera__popup {
+  background-color: #2a3950;
+  width: 194px;
+  height: 146px;
+  text-align: center;
+  position: relative;
+  top: -136px;
+  left: 10px;
+  z-index: 1;
+}
+.gamecenter .gamecenter__box {
+  background-color: #f9a4a1;
+}
+.gamecenter .gamecenter__bg {
+  background-color: #f8f8f8;
+}
+.gamecenter .gamecenter__popup {
+  background-color: #2a3950;
+  width: 195px;
+  height: 50px;
+}
+
+.safari .safari__box {
+  background-color: #d6f0f9;
+}
+.safari :hover {
+  animation: practice 2s ease-in-out;
+}
+.safari .safari__bg {
+  background-color: #3fbde8;
+}
+.safari .safari__popup {
+  background-color: #2a3950;
+  width: 194px;
+  height: 145px;
+  position: relative;
+  top: -145px;
+  left: 0px;
+  z-index: -1;
+}
+@keyframes practice {
+  from {
+    width: 194px;
+    height: 146px;
+  }
+  to {
+    width: 39px;
+    height: 73px;
+  }
+}
