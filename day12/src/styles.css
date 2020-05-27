@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #f8f7ff;
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+h5,
+h6,
+ul {
+  margin: 0;
+  padding: 0;
+}
+h5 {
+  font-size: 10px;
+}
+h6 {
+  font-size: 9px;
+}
+.phone {
+  width: 295px;
+  height: 600px;
+  background: linear-gradient(180deg, #f8f8f8 50%, #dbdbdb);
+  margin-top: 15px;
+  padding: 0 10px;
+  border: 17px solid white;
+  border-radius: 40px;
+  position: relative;
+  box-shadow: 5px 5px 5px 5px #e7e7f1;
+}
+
+.screen__box {
+  width: 150px;
+  height: 20px;
+  background-color: white;
+  margin-left: 49px;
+  border-radius: 0 0 17px 17px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.header .header__header {
+  font-size: 12px;
+  opacity: 0.7;
+}
+.header i {
+  opacity: 0.5;
+}
+
+.recipes .popular__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-top: 26px;
+  opacity: 0.7;
+}
+.recipes .popular__header h6 {
+  color: #f0263a;
+}
+
+.recipes .popular__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 9px;
+  font-size: 10px;
+}
+.recipes .popular__home,
+.recipes .popular__pastry,
+.recipes .popular__babies,
+.recipes .popular__smoothie {
+  width: 117px;
+  height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  color: white;
+}
+.recipes .recipes__title {
+  opacity: 0.8;
+}
+.recipes .popular__pastry {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(31, 31, 31, 0.8) 98%
+    ),
+    url("pastry.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.recipes .popular__home {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(31, 31, 31, 0.8) 98%
+    ),
+    url("salad.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.recipes .popular__babies {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(31, 31, 31, 0.8) 98%
+    ),
+    url("babies.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.recipes .popular__smoothie {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(31, 31, 31, 0.8) 98%
+    ),
+    url("smoothie.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.recipes .other__header {
+  margin-top: 20px;
+  margin-bottom: 14px;
+  opacity: 0.7;
+}
+.other__title h5 {
+  opacity: 0.6;
+}
+.other__title h6 {
+  opacity: 0.5;
+}
+.recipes .other__refreshments,
+.recipes .other__diet-dishes,
+.recipes .other__soup-recipes,
+.recipes .other__meet-dishes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  background-color: #fcfcfc;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.recipes .other__btn i {
+  color: #ea7985;
+}
+.tab-bar {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: -20px;
+  right: 0px;
+}
+.tab-bar .tab-bar__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  list-style-type: none;
+}
+.tab-bar .tab-bar__tab:nth-child(1),
+.tab-bar .tab-bar__tab:nth-child(3),
+.tab-bar .tab-bar__tab:nth-child(4) {
+  color: #7b7a7b;
+}
+.tab-bar__list .tab-bar__tab:nth-child(2) {
+  color: #ec707d;
+}
