@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@500;900&display=swap");
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+.my-playlist {
+  width: 330px;
+  height: 605px;
+  border: 5px solid black;
+}
+.status-bar {
+  margin: 50px 18px 32px 16px;
+  display: flex;
+  justify-content: space-between;
+  width: 54%;
+}
+.status-bar__column span {
+  font-weight: 900;
+  font-size: 17px;
+}
+.song-frame--big {
+  display: flex;
+  margin-left: 16px;
+  margin-right: 18px;
+}
+.song-frame__img {
+  width: 84px;
+  height: 83px;
+  background-color: sandybrown;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-right: 17px;
+}
+.song-frame__info {
+  line-height: 31px;
+}
+h1,
+h3 {
+  margin: 0;
+}
+.song-frame__info div {
+  font-size: 15px;
+  color: gray;
+  opacity: 0.7;
+  font-weight: 900;
+  font-style: italic;
+}
+.button {
+  margin: 36px 18px 33px 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.button__play {
+  width: 117px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  box-shadow: 5px 5px;
+}
+.button__like,
+.button__add {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px;
+}
+.fa-play {
+  margin-right: 5px;
+}
+.playlist {
+  margin-left: 16px;
+  margin-right: 18px;
+}
+.playlist__list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.playlist__list__img {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-right: 16px;
+}
+.playlist__list__info {
+  line-height: 22px;
+}
+.playlist__list__info span {
+  font-size: 13px;
+  font-weight: 900;
+  color: gray;
+  opacity: 0.7;
+  font-style: italic;
+}
+.first {
+  background-color: salmon;
+}
+.second {
+  background-color: pink;
+}
+.third {
+  background-color: blue;
+}
+.forth {
+  background-color: teal;
+}
