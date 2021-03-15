@@ -1,0 +1,75 @@
+body {
+  background-color: #6abbbe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@keyframes circleLoop {
+  to {
+    transform: rotate(0deg);
+  }
+
+  from {
+    transform: rotate(-180deg);
+  }
+}
+
+@keyframes squareLoop {
+  0% {
+    transform: scaleY(1);
+  }
+  25% {
+  }
+  50% {
+    transform: scaleY(1.5);
+  }
+  75% {
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.circle {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  margin-bottom: 160px;
+  animation: circleLoop 1s ease infinite;
+}
+.circle div {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+.square {
+  width: 100px;
+  justify-content: space-between;
+  display: flex;
+}
+.square div {
+  width: 14px;
+  height: 50px;
+  background-color: white;
+}
+.square div:nth-child(1) {
+  animation: squareLoop 1.2s ease-in-out infinite;
+  animation-delay : 200ms;
+}
+.square div:nth-child(2) {
+  animation: squareLoop 1.2s ease-in-out infinite ;
+  animation-delay : 400ms;
+}
+.square div:nth-child(3) {
+  animation: squareLoop 1.2s ease-in-out infinite ;
+  animation-delay : 600ms;
+}
+.square div:nth-child(4) {
+  animation: squareLoop 1.2s ease-in-out infinite ;
+  animation-delay : 800ms;
+}
+.square div:nth-child(5) {
+  animation: squareLoop 1.2s ease-in-out infinite ;
+  animation-delay : 1000ms;
+}
