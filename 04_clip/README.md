@@ -1,3 +1,3 @@
-#The Best Colors
+# Clip board
 
-<img width="549" alt="image" src="https://user-images.githubusercontent.com/65156388/114149280-b3a2e880-9955-11eb-8cb7-c53c1a90521f.PNG">
+<img width="340" alt="image" src="https://user-images.githubusercontent.com/65156388/114151014-a4bd3580-9957-11eb-9d98-8714c4bc3402.PNG">
