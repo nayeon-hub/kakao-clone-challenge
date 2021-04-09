@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  font-size: 20px;
+  /* justify-content: center; */
+}
+header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.frame {
+  display: flex;
+  justify-content: center;
+}
+.colorbox {
+  width: 270px;
+  height: 410px;
+  border: 10px solid white;
+}
+.periwinkle {
+  background-color: #e8e7e4;
+  margin-right: 10px;
+}
+.iris {
+  background-color: #c885b1;
+  margin-left: 10px;
+}
+.cornflower {
+  background-color: #7494c3;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+.ice {
+  background-color: #f4f6f9;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.number {
+  background-color: white;
+  height: 60px;
+  padding-left: 8px;
+}
+.name {
+  background-color: white;
+  height: 80px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+h2 {
+  margin: 0px;
+  padding-left: 8px;
+}
