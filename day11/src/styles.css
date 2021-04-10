@@ -139,6 +139,14 @@ p {
   border-radius: 0px 20px 20px 0px;
 }
 
+.nav__bar {
+  width: 42px;
+  height: 2px;
+  background-color: #3e68ff;
+  position: relative;
+  left: 69px;
+}
+
 .nav__list {
   display: flex;
   justify-content: space-around;
