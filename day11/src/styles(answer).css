@@ -37,7 +37,6 @@ a {
   border-radius: 40px;
   box-shadow: inset -6px -6px 15px rgba(145, 160, 180, 0.45),
     30px 30px 40px rgba(118, 146, 180, 0.18);
-  overflow: hidden;
   padding: 20px;
 }
 
@@ -160,8 +159,10 @@ a {
   display: flex;
   justify-content: space-between;
 }
-
-.ratings i {
+.fa-thumbtack {
+  color: #869ffb;
+}
+.fa-star {
   color: #ffbb01;
 }
 
