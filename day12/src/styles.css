@@ -16,21 +16,21 @@ ul {
   padding: 0;
 }
 h5 {
-  font-size: 10px;
+  font-size: 12px;
 }
 h6 {
-  font-size: 9px;
+  font-size: 12px;
 }
 .phone {
-  width: 295px;
-  height: 600px;
+  width: 307px;
   background: linear-gradient(180deg, #f8f8f8 50%, #dbdbdb);
   margin-top: 15px;
-  padding: 0 10px;
+  padding: 0 16px;
   border: 17px solid white;
   border-radius: 40px;
   position: relative;
   box-shadow: 5px 5px 5px 5px #e7e7f1;
+  overflow: hidden;
 }
 
 .screen__box {
@@ -46,15 +46,15 @@ h6 {
   align-items: center;
   margin-top: 10px;
 }
-.header .header__header {
-  font-size: 12px;
+.header__header {
+  font-size: 14px;
   opacity: 0.7;
 }
 .header i {
   opacity: 0.5;
 }
 
-.recipes .popular__header {
+.popular__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,21 +62,18 @@ h6 {
   margin-top: 26px;
   opacity: 0.7;
 }
-.recipes .popular__header h6 {
+.popular__header h6 {
   color: #f0263a;
 }
 
-.recipes .popular__list {
+.popular__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 9px;
   font-size: 10px;
 }
-.recipes .popular__home,
-.recipes .popular__pastry,
-.recipes .popular__babies,
-.recipes .popular__smoothie {
+.popular__list > li {
   width: 117px;
   height: 76px;
   display: flex;
@@ -84,51 +81,27 @@ h6 {
   align-items: center;
   border-radius: 8px;
   color: white;
-}
-.recipes .recipes__title {
-  opacity: 0.8;
-}
-.recipes .popular__pastry {
-  background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.1),
-      rgba(31, 31, 31, 0.8) 98%
-    ),
-    url("pastry.jpg");
   background-position: center;
   background-size: cover;
 }
-.recipes .popular__home {
-  background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.1),
-      rgba(31, 31, 31, 0.8) 98%
-    ),
-    url("salad.jpg");
-  background-position: center;
-  background-size: cover;
+
+.popular__pastry {
+  background-image: linear-gradient(transparent, rgba(10, 6, 6, 0.466) 95%),
+    url("../images/pastry.jpg");
 }
-.recipes .popular__babies {
-  background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.1),
-      rgba(31, 31, 31, 0.8) 98%
-    ),
-    url("babies.jpg");
-  background-position: center;
-  background-size: cover;
+.popular__home {
+  background-image: linear-gradient(transparent, rgba(10, 6, 6, 0.466) 95%),
+    url("../images/salad.jpg");
 }
-.recipes .popular__smoothie {
-  background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.1),
-      rgba(31, 31, 31, 0.8) 98%
-    ),
-    url("smoothie.jpg");
-  background-position: center;
-  background-size: cover;
+.popular__babies {
+  background-image: linear-gradient(transparent, rgba(10, 6, 6, 0.466) 95%),
+    url("../images/babies.jpg");
 }
-.recipes .other__header {
+.popular__smoothie {
+  background-image: linear-gradient(transparent, rgba(10, 6, 6, 0.466) 95%),
+    url("../images/smoothie.jpg");
+}
+.other__header {
   margin-top: 20px;
   margin-bottom: 14px;
   opacity: 0.7;
@@ -139,19 +112,18 @@ h6 {
 .other__title h6 {
   opacity: 0.5;
 }
-.recipes .other__refreshments,
-.recipes .other__diet-dishes,
-.recipes .other__soup-recipes,
-.recipes .other__meet-dishes {
+.other__list > li {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 45px;
+  height: 55px;
   background-color: #fcfcfc;
   padding: 12px;
-  border-radius: 10px;
+  border-radius: 12px;
   margin-top: 10px;
+  box-shadow: 8px 10px 26px -18px rgb(0, 0, 0, 0.82);
+  overflow: hidden;
 }
 .recipes .other__btn i {
   color: #ea7985;
@@ -163,7 +135,7 @@ h6 {
   bottom: -20px;
   right: 0px;
 }
-.tab-bar .tab-bar__list {
+.tab-bar__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -171,9 +143,9 @@ h6 {
   padding: 20px;
   list-style-type: none;
 }
-.tab-bar .tab-bar__tab:nth-child(1),
-.tab-bar .tab-bar__tab:nth-child(3),
-.tab-bar .tab-bar__tab:nth-child(4) {
+.tab-bar__tab:nth-child(1),
+.tab-bar__tab:nth-child(3),
+.tab-bar__tab:nth-child(4) {
   color: #7b7a7b;
 }
 .tab-bar__list .tab-bar__tab:nth-child(2) {
