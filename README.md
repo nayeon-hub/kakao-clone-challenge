@@ -1,2 +1,1 @@
-# kakao-clone-challenge
-kakao clone challenge
+# mini html-css
