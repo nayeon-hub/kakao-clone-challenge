@@ -1,0 +1,145 @@
+.music-playlist {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav a {
+  font-size: 18px;
+}
+
+.content-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.content-summary::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-image: url("https://search.pstatic.net/common?type=a&size=120x150&quality=95&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202103%2F20210324142444281.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 27px 0px;
+}
+
+.content-summary h1 {
+  font-size: 20px;
+}
+
+.content-button {
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.content-button button {
+  width: 96px;
+  height: 36px;
+  border-radius: 32px;
+}
+
+.content-button button:first-child {
+  margin-right: 8px;
+}
+
+.like-button::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 12px;
+  background-image: url("./assets/heart-solid.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  top: 1px;
+}
+
+.content-playlist {
+  list-style: none;
+  padding: 0px;
+}
+
+.content-playlist li {
+  display: flex;
+  padding: 8px 16px;
+  font-size: 12px;
+}
+
+.item-photo {
+  width: 43px;
+  height: 43px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 12px;
+}
+
+.item-detail {
+  display: flex;
+  justify-content: space-between;
+  width: 158px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-button {
+  background-color: transparent;
+  color: #9ba8a9;
+}
+
+.content-bar {
+  width: 260px;
+  height: 60px;
+  background-color: #7c5b9b;
+  border-radius: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 27px;
+}
+
+.content-bar a {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.bar-button button {
+  background-color: transparent;
+}
+
+.bar-button button:nth-child(2) {
+  font-size: 18px;
+}
+
+.playlist-item:first-child .item-photo {
+  background-image: url("https://musicmeta-phinf.pstatic.net/album/005/211/5211473.jpg?type=r360Fll&v=20210326102709");
+}
+
+.playlist-item:nth-child(2) .item-photo {
+  background-image: url("https://musicmeta-phinf.pstatic.net/album/003/399/3399860.jpg?type=r360Fll&v=20210303110022");
+}
+
+.playlist-item:nth-child(3) .item-photo {
+  background-image: url("https://musicmeta-phinf.pstatic.net/album/004/550/4550593.jpg?type=r480Fll&v=20210303143526");
+}
+
+.playlist-item:nth-child(4) .item-photo {
+  background-image: url("https://musicmeta-phinf.pstatic.net/album/000/542/542030.jpg?type=r360Fll&v=20210302232520");
+}
+
+.playlist-item:last-child .item-photo {
+  background-image: url("https://musicmeta-phinf.pstatic.net/album/005/211/5211473.jpg?type=r360Fll&v=20210326102709");
+}
