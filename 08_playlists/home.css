@@ -1,18 +1,47 @@
+body {
+  background-color: #eceff0;
+}
+
 .music-playlist {
-  width: 280px;
+  width: 310px;
   margin: 0 auto;
+  background-color: #fff;
+  padding: 22px;
+  border-radius: 16px;
+  position: relative;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
-}
-.nav a {
-  font-size: 18px;
+  align-items: center;
 }
 
-.content {
-  position: relative;
+.nav a {
+  font-size: 18px;
+  color: black;
+}
+
+.nav form {
+  display: flex;
+  align-items: center;
+}
+
+.nav input {
+  border: none;
+  height: 24px;
+  margin-right: 4px;
+}
+
+.nav input:focus,
+.nav input:active {
+  outline: none;
+  /* background-color: #eceff0; */
+}
+
+.nav button {
+  font-size: 16px;
+  background-color: transparent;
 }
 
 .content-summary {
@@ -38,6 +67,10 @@
   font-size: 20px;
 }
 
+.content-summary span {
+  color: #9ba8a9;
+}
+
 .content-button {
   margin-bottom: 14px;
   display: flex;
@@ -51,7 +84,14 @@
 }
 
 .content-button button:first-child {
-  margin-right: 8px;
+  margin-right: 18px;
+  color: white;
+  background-color: #cea5e4;
+}
+
+.content-button button:last-child {
+  background-color: white;
+  border: 1px solid #9ba8a9;
 }
 
 .like-button::before {
@@ -69,12 +109,28 @@
 .content-playlist {
   list-style: none;
   padding: 0px;
+  overflow: scroll;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.content-playlist::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
 }
 
 .content-playlist li {
   display: flex;
-  padding: 8px 16px;
   font-size: 12px;
+  padding: 10px 12px;
+}
+
+.content-playlist li:last-child {
+  margin-bottom: 40px;
+}
+
+.selected {
+  border: 1px solid #9ba8a9;
+  border-radius: 12px;
 }
 
 .item-photo {
@@ -84,12 +140,13 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 12px;
+  border-radius: 8px;
 }
 
 .item-detail {
   display: flex;
   justify-content: space-between;
-  width: 158px;
+  width: 184px;
 }
 
 .item-info {
@@ -103,8 +160,12 @@
   color: #9ba8a9;
 }
 
+.singer {
+  color: #9ba8a9;
+}
+
 .content-bar {
-  width: 260px;
+  width: 280px;
   height: 60px;
   background-color: #7c5b9b;
   border-radius: 32px;
@@ -113,13 +174,30 @@
   align-items: center;
   padding: 10px 27px;
   position: absolute;
-  bottom: 0px;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.9;
 }
 
 .content-bar a {
   display: flex;
   flex-direction: column;
   font-size: 12px;
+  width: 160px;
+}
+
+.content-bar a span:first-child {
+  color: #9ba8a9;
+}
+
+.content-bar a span:last-child {
+  color: black;
+}
+
+.bar-button {
+  display: flex;
+  align-items: center;
 }
 
 .bar-button button {
@@ -128,6 +206,10 @@
 
 .bar-button button:nth-child(2) {
   font-size: 18px;
+}
+
+.bar-button i {
+  color: white;
 }
 
 .playlist-item:first-child .item-photo {
